@@ -6,7 +6,11 @@
   margin: 0;
   box-sizing: border-box;
   outline: none;
-  font-family: 'Times New Roman', sans-serif;
+  font-family: "Times New Roman", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -26,7 +30,7 @@ body {
 main {
   width: 95%;
   margin: 10px auto;
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   padding: 15px 15px;
 }
 
@@ -35,8 +39,8 @@ main {
   width: 100%;
   padding: 25px;
   margin: 20px 0px;
-  border: 2px solid rgba(200,200,200,0.3);
-  background-color: rgba(255,255,255,0.4);
+  border: 2px solid rgba(200, 200, 200, 0.3);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 #nav-heading {
@@ -67,14 +71,18 @@ main {
   display: flex;
   align-items: center;
   padding: 5px 10px;
-  background-color: rgba(255,255,255,0.3);
-  border: 2px solid rgba(200,200,200,0.4);
-  border-bottom: 3px solid #CECECE;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(200, 200, 200, 0.4);
+  border-bottom: 3px solid #cecece;
 }
 
 /* nav menus */
 #nav-items a {
   display: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* hero section */
@@ -90,9 +98,9 @@ main {
 #profile-pic-container {
   height: 200px;
   width: 200px;
-  border: 5px solid rgba(255,255,255,0.2);
+  border: 5px solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
 
 #profile-pic {
@@ -120,13 +128,18 @@ main {
 }
 
 #theme3 {
-  background-color: #0C0705;
+  background-color: #0c0705;
+}
+
+/* about section */
+#about-section {
+  text-align: center;
 }
 
 /* about section content */
 #about-section p {
-  text-align: center;
   font-size: var(--smallSize1);
+  margin-bottom: 5px;
 }
 
 /* skills and projects section container */
@@ -142,13 +155,14 @@ main {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 20px;
 }
 
 /* projects container */
 .project-container {
   display: flex;
+  align-items: center;
   gap: 10px;
+  margin: 10px 0px;
 }
 
 .project-description p {
@@ -161,7 +175,6 @@ main {
 
 .project-icons {
   width: 60px;
-  align-self: flex-start;
 }
 
 /* contact section starts */
@@ -173,13 +186,15 @@ main {
 }
 
 /* input fields */
-#full-name, #email-id, #message {
+#full-name,
+#email-id,
+#message {
   width: 100%;
   margin: 5px 0px;
   padding: 5px;
   border: 1px solid silver;
   border-radius: 5px;
-  box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
 }
 
 /* input fields and labels container */
@@ -189,6 +204,11 @@ main {
 
 label {
   font-size: var(--smallSize1);
+  font-weight: 550;
+}
+
+textarea {
+  resize: none;
 }
 
 /* connect button*/
@@ -197,7 +217,7 @@ label {
   padding: 6px 12px;
   border: none;
   border-radius: 2px;
-  box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 
@@ -205,10 +225,8 @@ label {
   background-color: darkturquoise;
 }
 
-
 /* For large devices */
-@media(min-width: 920px) {
-
+@media (min-width: 920px) {
   main {
     padding: 20px 20px;
   }
@@ -244,7 +262,7 @@ label {
     display: inline-block;
     width: 30%;
   }
-  
+
   #projects-section {
     display: inline-block;
     width: 60%;
@@ -253,5 +271,4 @@ label {
   #contact-form {
     width: 95%;
   }
-
 }
