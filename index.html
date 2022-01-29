@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GANESAN R portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width =device-width, initial-scale =1.0" />
+    <!--custom css stylesheet-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <!--navigation bar-->
+      <nav id="nav-bar">
+        <h1 id="nav-heading">My Portfolio</h1>
+        <div id="nav-items">
+          <a href="#about-section">About Me</a>
+          <a href="#skills-section">Skills</a>
+          <a href="#projects-section">Projects</a>
+          <a href="#contact-section">Contact</a>
+        </div>
+      </nav>
+      <!--hero section-->
+      <section id="hero-section" class="section">
+        <div id="profile-pic-container">
+          <img id="profile-pic" src="profile pic.jpg" alt="profile-photo" />
+        </div>
+        <div id="hero-container">
+          <h2 id="hero-name" class="heading">GANESAN R</h2>
+          <h3 id="hero-designation" class="sub-heading">
+            Aspiring Frontend Web Developer
+          </h3>
+          <!--themes for color and bgcolor-->
+          <button
+            type="button"
+            class="theme"
+            id="theme1"
+            onClick="pink()"
+          ></button>
+          <button
+            type="button"
+            class="theme"
+            id="theme2"
+            onClick="coral()"
+          ></button>
+          <button
+            type="button"
+            class="theme"
+            id="theme3"
+            onClick="night()"
+          ></button>
+        </div>
+      </section>
+      <!--about me section-->
+      <section id="about-section" class="section">
+        <h2 class="heading">About Me</h2>
+        <p>
+          I have completed bsc computer science at Agurchand Manmull Jain
+          College. Now, i have started learning Frontend Web Development using
+          HTML5, CSS3 and JavaScript. I have completed some small projects such
+          as digital clock, simple calculator and login validation form.
+        </p>
+        <a
+          href="https://www.linkedin.com/in/ganesan-r-3083a8211/"
+          target="_blank"
+          >Linkedin profile link
+        </a>
+        <a href="https://github.com/GANESANGIDON" target="_blank"
+          >GitHub profile Link</a
+        >
+      </section>
+      <!--skills and projects section-->
+      <section id="skills-projects">
+        <!--skills section-->
+        <div id="skills-section" class="section">
+          <h2 class="heading">SKILLS</h2>
+          <div id="skill-icons-container">
+            <img
+              class="skill-icons"
+              src="https://cdn-icons-png.flaticon.com/512/174/174854.png"
+              alt="html_logo"
+              title="HTML5"
+            />
+            <img
+              class="skill-icons"
+              src="https://cdn-icons-png.flaticon.com/512/732/732190.png"
+              alt="css3_logo"
+              title="CSS3"
+            />
+            <img
+              class="skill-icons"
+              src="https://www.vhv.rs/dpng/d/313-3133777_javascript-transparent-background-svg-hd-png-download.png"
+              alt="javascript_logo"
+              title="Javascript"
+            />
+          </div>
+        </div>
+        <!--projects section-->
+        <div id="projects-section" class="section">
+          <h2 class="heading">PROJECTS</h2>
+          <div class="project-container">
+            <img
+              class="project-icons"
+              src="webui_logo.svg"
+              alt="project_icon"
+            />
+            <div class="project-description">
+              <h3 class="sub-heading">Netflix Landing Page Clone</h3>
+              <p>
+                I have successfully created a responsive clone Netflix landing
+                page using HTML5, CSS3 and javascript with the help of 7 days
+                long bootcamp conducted by ShapeAi.
+                <a
+                  href="https://netflix-clone-ganesangidon.netlify.app/"
+                  target="_blank"
+                  >Website Link</a
+                >
+                <a
+                  href="https://github.com/GANESANGIDON/Netflix-clone"
+                  target="_blank"
+                  >Source code</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="project-container">
+            <img
+              class="project-icons"
+              src="webui_logo.svg"
+              alt="project_icon"
+            />
+            <div class="project-description">
+              <h3 class="sub-heading">Travel Site</h3>
+              <p>
+                A responsive single page Travel website developed using html5
+                css3 javascript with bootstrap5 and jquery for carousels, this
+                project is made with gridsystem and darkmode toggle button.
+                <a
+                  href="https://ganesangidonlgmviptask1.netlify.app/"
+                  target="_blank"
+                  >Website Link</a
+                >
+                <a
+                  href="https://github.com/GANESANGIDON/LGMVIP-task1"
+                  target="_blank"
+                  >Source code</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="project-container">
+            <img
+              class="project-icons"
+              src="webui_logo.svg"
+              alt="project_icon"
+            />
+            <div class="project-description">
+              <h3 class="sub-heading">React App</h3>
+              <p>
+                This is a simple project made with reactjs to make an API call
+                to display the user data in a grid layout.
+                <a
+                  href="https://reactapi-ganesangidon.herokuapp.com/"
+                  target="_blank"
+                  >Website Link</a
+                >
+                <a
+                  href="https://github.com/GANESANGIDON/Lgmvip-task2"
+                  target="_blank"
+                  >Source code</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="project-container">
+            <img
+              class="project-icons"
+              src="webui_logo.svg"
+              alt="project_icon"
+            />
+            <div class="project-description">
+              <h3 class="sub-heading">Students Result Management System</h3>
+              <p>
+                This project is developed with PHP , MYSQL and bootstrap5 for
+                styling using the site the students can login using their
+                username and password to view and printout their result as a
+                pdf, whereas the admin can login and do CRUD operations over the
+                marklist.
+                <a
+                  href="https://github.com/GANESANGIDON/LGMVIP-task3"
+                  target="_blank"
+                  >Source code</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--contact section-->
+      <section id="contact-section" class="section">
+        <h2 class="heading">CONTACT</h2>
+        <form
+          id="contact-form"
+          method="post"
+          action="https://formspree.io/f/xzbyqjqz"
+        >
+          <div class="input">
+            <label for="full-name">Enter your full Name:</label><br />
+            <input
+              type="text"
+              name="full_name"
+              id="full-name"
+              placeholder="eg: John Doe"
+            />
+          </div>
+          <div class="input">
+            <label for="email-id">Email id:</label><br />
+            <input
+              type="email"
+              name="mail_id"
+              id="email-id"
+              placeholder="eg: johndoe123@gmail.com"
+            />
+          </div>
+          <div class="input">
+            <label for="message">Message:</label><br />
+            <textarea
+              name="message"
+              id="message"
+              rows="5"
+              placeholder="Type the message you want to send me"
+            ></textarea>
+          </div>
+          <button id="connect-button" class="input" type="submit">SEND</button>
+        </form>
+      </section>
+    </main>
+    <!--javascript-->
+    <script>
+      function pink() {
+        document.body.style.backgroundColor = "pink";
+        document.body.style.color = "black";
+      }
+
+      function coral() {
+        document.body.style.backgroundColor = "orange";
+        document.body.style.color = "#DF0174";
+      }
+
+      function night() {
+        document.body.style.backgroundColor = "#0c0705";
+        document.body.style.color = "white";
+      }
+    </script>
+  </body>
+</html>
